@@ -18,8 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Auto assign PR and request review
-        uses: delivery-much/actions-assigner@v1.0.2
+      - name: Run a script
+        run: echo 'Hello world'
+
 
