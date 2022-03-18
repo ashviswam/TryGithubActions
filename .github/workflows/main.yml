@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ feature/* ]
+    branches: [ ash* ]
   
 
   # Allows you to run this workflow manually from the Actions tab
@@ -30,7 +30,7 @@ jobs:
           script: |
             const { repo, owner } = context.repo;
             const result = await github.rest.pulls.create({
-              title: '[Example] Simple demo',
+              title: '[Example] Simple demo change',
               owner,
               repo,
               head: '${{ github.ref_name }}',
