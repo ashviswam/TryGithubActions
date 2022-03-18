@@ -14,7 +14,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  updateAuthors:x1
+  updateAuthors:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -33,5 +33,3 @@ jobs:
           old_string: "<!-- Add your description here -->"
           new_string: "** Automatic pull request**"
           get_diff: true
-
-
