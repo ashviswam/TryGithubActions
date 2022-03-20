@@ -27,7 +27,6 @@ jobs:
           target_branch: main
           title: My pull request
           body: "**Automated pull request**"
-          reviewer: Ashviswam
           assignee: Ashviswam
           label: enhancement
           draft: true
